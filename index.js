@@ -1,0 +1,35 @@
+var tableData = [
+    {id:1, name:"Christian Ensz", tn:"Procise to be Precise", sumw:0, suml:0, sumt:0, h2hw:0, h2hl:0, h2ht:0, h2lw:0, h2ll:0, h2lt:0, spf:0, spa:0},
+    {id:2, name:"Christian Ensz", tn:"Procise to be Precise", sumw:0, suml:0, sumt:0, h2hw:0, h2hl:0, h2ht:0, h2lw:0, h2ll:0, h2lt:0, spf:0, spa:0},
+    {id:3, name:"Christian Ensz", tn:"Procise to be Precise", sumw:0, suml:0, sumt:0, h2hw:0, h2hl:0, h2ht:0, h2lw:0, h2ll:0, h2lt:0, spf:0, spa:0},
+    {id:4, name:"Christian Ensz", tn:"Procise to be Precise", sumw:0, suml:0, sumt:0, h2hw:0, h2hl:0, h2ht:0, h2lw:0, h2ll:0, h2lt:0, spf:0, spa:0},
+    {id:5, name:"Christian Ensz", tn:"Procise to be Precise", sumw:0, suml:0, sumt:0, h2hw:0, h2hl:0, h2ht:0, h2lw:0, h2ll:0, h2lt:0, spf:0, spa:0},
+    {id:6, name:"Christian Ensz", tn:"Procise to be Precise", sumw:0, suml:0, sumt:0, h2hw:0, h2hl:0, h2ht:0, h2lw:0, h2ll:0, h2lt:0, spf:0, spa:0},
+    {id:7, name:"Christian Ensz", tn:"Procise to be Precise", sumw:0, suml:0, sumt:0, h2hw:0, h2hl:0, h2ht:0, h2lw:0, h2ll:0, h2lt:0, spf:0, spa:0},
+    {id:8, name:"Christian Ensz", tn:"Procise to be Precise", sumw:0, suml:0, sumt:0, h2hw:0, h2hl:0, h2ht:0, h2lw:0, h2ll:0, h2lt:0, spf:0, spa:0},
+    {id:9, name:"Christian Ensz", tn:"Procise to be Precise", sumw:0, suml:0, sumt:0, h2hw:0, h2hl:0, h2ht:0, h2lw:0, h2ll:0, h2lt:0, spf:0, spa:0},
+    {id:10, name:"Christian Ensz", tn:"Procise to be Precise", sumw:0, suml:0, sumt:0, h2hw:0, h2hl:0, h2ht:0, h2lw:0, h2ll:0, h2lt:0, spf:0, spa:0},
+]
+
+$("#standings-table").tabulator({
+    height:"500px",
+    layout:"fitColumns",
+    data:tableData,
+    columns:[
+        {title:"Name", field:"name", align:"left", widthGrow:2},
+        {title:"Team Name", field:"tn", align:"left", widthGrow:2},
+        {title:"Sum - W", field:"sumw", align:"center", sorter:"number"},
+        {title:"Sum - L", field:"suml", align:"center", sorter:"number"},
+        {title:"Sum - T", field:"sumt", align:"center", sorter:"number"},
+        {title:"H2H - W", field:"h2hw", align:"center", sorter:"number"},
+        {title:"H2H - L", field:"h2hl", align:"center", sorter:"number"},
+        {title:"H2H - T", field:"h2ht", align:"center", sorter:"number"},
+        {title:"PCT", field:"h2hpct", align:"center", sorter:"number"},
+        {title:"H2L - w", field:"h2lw", align:"center", sorter:"number"},
+        {title:"H2L - L", field:"h2ll", align:"center", sorter:"number"},
+        {title:"H2L - T", field:"h2lt", align:"center", sorter:"number"},
+        {title:"PCT", field:"h2hpct", align:"center", sorter:"number"},
+        {title:"Sum Points For", field:"spf", align:"center", sorter:"number"},
+        {title:"Sum Points Against", field:"spa", align:"center", sorter:"number"},
+    ],
+});
